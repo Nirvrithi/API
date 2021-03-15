@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>hello API</title>
+        <style>
+            body{
+                font-size: 50px;
+            }
+ 
+         
+            .btn-grad {background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+          .cityInput{
+              padding: 10px 10px;
+          }
+        </style>
+    </head>
+    <body>
+        <input type="text" class="cityInput" value="" placeholder="Type in your place">
+        <button onclick=hello() class="btn-grad">Fetch Details</button>
+        <div>
+            <span>Name :</span>
+            <span id="plot"></span>
+        </div>
+ 
+        <div>
+            <span>Latitude :</span>
+            <span id="name"></span>
+        </div>   
+        <div>
+            <span>Longitude :</span>
+            <span id="dname"></span>
+        </div>  
+        <div>
+            <span>Sunrise :</span>
+            <span id="sunrise"></span>
+        </div>  
+        <div>
+            <span>Sunset :</span>
+            <span id="sunset"></span>
+        </div>   
+        <script src="app.js"></script>
+    </body>
+</html>
